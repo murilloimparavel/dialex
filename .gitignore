@@ -1,0 +1,58 @@
+# Dialex — Cognitive Search Amplifier
+# .gitignore
+
+# === Dependencies ===
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# === Environment & Secrets ===
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+secrets/
+
+# === Database ===
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+# NOTE: The knowledge graph .db file is gitignored by default.
+# Use `dialex export` to share graph snapshots as JSON.
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === Dialex Runtime ===
+sessions/
+jobs/
+logs/
+*.log
+.dialex-cache/
+
+# === PRD (lives in mvp-system, not here) ===
+docs/prd/
+
+# === Debate Artifacts (local only) ===
+debates/transcripts/*.json
+debates/checkpoints/
+
+# === OS ===
+.DS_Store
+*.swp
+desktop.ini
